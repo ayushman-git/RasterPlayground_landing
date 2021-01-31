@@ -11,66 +11,106 @@
     <!-- hero section -->
     <section id="hero">
       <nav id="nav-bar" class="wrapper">
-        <span><strong>Raster</strong>Playground</span>
+        <a href="/src/index.html">
+          <span><strong>Raster</strong>Playground</span>
+        </a>
         <nav>
           <ul class="nav-bar-link">
-            <li>About</li>
-            <li>Company</li>
-            <li>Contribute</li>
+            <li>
+              <button class="button button-clear" id="btn-about">About</button>
+            </li>
+            <li>
+              <button class="button button-clear" id="btn-company">
+                Company
+              </button>
+            </li>
+            <li>
+              <button class="button button-clear" id="btn-contribute">
+                Contribute
+              </button>
+            </li>
           </ul>
         </nav>
       </nav>
-
-      <section class="hero-wrap wrapper">
+      <main class="hero-wrap wrapper">
         <article>
-          <header><h1>A Color Playground For Raster Maps.</h1></header>
+          <header>
+            <h1 class="hero-heading">
+              A <strong>Color Playground</strong> For Raster Maps.
+            </h1>
+          </header>
           <p>Colorize any part of earth using your own color palette</p>
           <footer>
-            <button>Get Started</button>
+            <a href="https://play.blueskyhq.in/" target="_blank" rel="noopener"
+              ><button id="get-started-btn">Get Started</button></a
+            >
           </footer>
         </article>
         <img class="hero-img" src="./assets/images/earth.png" alt="earth" />
-      </section>
+      </main>
     </section>
 
+    <!-- about section -->
     <section id="about">
       <section class="about-wrap wrapper">
-        <div class="about-wireframe-wrap">
-          <img
-            class="about-wireframe"
-            src="./assets/images/wireframe.png"
-            alt="raster playground"
-          />
-        </div>
+        <!-- <div class="about-wireframe-wrap"> -->
+        <img
+          class="about-wireframe"
+          src="./assets/images/wireframe.png"
+          alt="raster playground"
+        />
+        <!-- </div> -->
         <section class="features-wrap">
           <article>
             <header><h3>Colorize</h3></header>
             <p>Pick you own color from the color picker to color the map.</p>
           </article>
           <article>
-            <header><h3>Colorize</h3></header>
-            <p>Pick you own color from the color picker to color the map.</p>
+            <header><h3>Palette</h3></header>
+            <p>Create your own color palette.</p>
           </article>
           <article>
-            <header><h3>Colorize</h3></header>
-            <p>Pick you own color from the color picker to color the map.</p>
+            <header><h3>Shape your map</h3></header>
+            <p>Pick a shape of a coutry.</p>
           </article>
         </section>
       </section>
     </section>
+
     <div class="polygon"></div>
+
+    <!-- company section -->
     <section id="company">
       <header class="company-header">
         <h5>A Product By</h5>
         <img src="./assets/images/bluehq_logo.png" alt="blue sky logo" />
       </header>
       <blockquote class="company-intro">
-        If you like <span class="blq-emp">RasterPlayground</span> you would love
-        our
-        <span class="blq-emp">other products.</span>
+        If you like <strong class="blq-emp">RasterPlayground</strong>, you would
+        love our
+        <strong class="blq-emp">other products.</strong>
       </blockquote>
       <button class="btn-bsky">Blue Sky Analytics</button>
+      <img class="shuttle" src="./assets/images/shuttle_.png" alt="shuttle" />
     </section>
-    <section id="contribute"></section>
+
+    <div class="rocket-fuel">
+      <img src="./assets/svg/rocket.svg" alt="rocket fuel" />
+    </div>
+
+    <!-- contribute section -->
+    <section id="contribute">
+      <article class="contribute-wrap wrapper">
+        <h2>
+          <strong>RasterPlayground</strong> is an
+          <strong>open source</strong> project
+        </h2>
+        <button class="github-btn">
+          Contribute <img src="./assets/svg/github.svg" alt="github" />
+        </button>
+      </article>
+    </section>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
