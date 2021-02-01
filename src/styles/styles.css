@@ -5,8 +5,6 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  overflow-x: hidden;
 }
 
 .wrapper {
@@ -34,7 +32,6 @@ body {
 }
 
 #company {
-  min-height: 100vh;
   background-color: #08205b;
   display: flex;
   flex-flow: column nowrap;
@@ -95,7 +92,7 @@ body {
 }
 
 #hamburger-menu {
-  visibility: hidden;
+  display: none;
   height: 1.4rem;
   cursor: pointer;
 }
@@ -119,10 +116,6 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   margin: 0;
-}
-
-.nav-warp {
-  width: 0;
 }
 
 .nav-bar-link > li {
@@ -242,11 +235,13 @@ button:hover {
 
 .shuttle {
   position: relative;
-  bottom: -3rem;
   margin-top: 10rem;
   width: 20%;
   max-width: 300px;
   z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -30px;
 }
 
 .rocket-fuel {
@@ -306,11 +301,14 @@ button:hover {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    font-size: 20px;
+  }
   .nav-bar-link {
     visibility: hidden;
   }
   #hamburger-menu {
-    visibility: visible;
+    display: block;
   }
   .about-wrap {
     grid-template-columns: 1fr;
@@ -336,5 +334,6 @@ button:hover {
   }
   .company-intro {
     font-size: 2.8rem;
+    width: 90%;
   }
 }
