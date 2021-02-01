@@ -131,6 +131,8 @@ button:hover {
   flex-flow: row wrap-reverse;
   justify-content: center;
   align-items: center;
+  position: relative;
+  top: 50%;
 }
 
 .hero-wrap > article {
