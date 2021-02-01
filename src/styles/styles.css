@@ -340,6 +340,9 @@ button:hover {
     grid-column: 1/2;
     grid-row: 2/3;
   }
+  .hero-wrap {
+    margin-top: 3rem;
+  }
   .hero-wrap > article {
     max-width: 90%;
     margin-bottom: 20rem;
