@@ -4,6 +4,12 @@ const company = document.getElementById("company");
 const menu = document.getElementById("menu");
 const contribute = document.getElementById("contribute");
 
+// cards
+const featureCards = document.querySelectorAll(".features-wrap > article");
+
+// img
+const wireframe = document.getElementsByClassName("about-wireframe")[0];
+
 // buttons
 const aboutBtn = document.getElementById("btn-about");
 const companyBtn = document.getElementById("btn-company");
@@ -102,4 +108,36 @@ tlShuttle.to(".shuttle", {
   transformOrigin: "50% 50%",
   duration: 3,
   rotation: -2,
+});
+
+featureCards.forEach((el) => {
+  el.addEventListener("mouseover", () => {
+    gsap.to(el, {
+      duration: 0.2,
+      scale: 1.05,
+      ease: "circ.out",
+    });
+  });
+  el.addEventListener("mouseleave", () => {
+    gsap.to(el, {
+      duration: 0.2,
+      scale: 1,
+    });
+  });
+});
+
+wireframe.addEventListener("mouseover", () => {
+  gsap.to(wireframe, {
+    duration: 0.4,
+    scale: 1.05,
+    ease: "power1.out",
+  });
+});
+
+wireframe.addEventListener("mouseleave", () => {
+  gsap.to(wireframe, {
+    duration: 0.8,
+    scale: 1,
+    ease: "power1.out",
+  });
 });

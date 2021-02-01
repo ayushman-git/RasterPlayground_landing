@@ -235,6 +235,7 @@ button:hover {
   margin-top: 5rem;
   padding: 0 4rem;
   color: #274ca8;
+  text-align: center;
 }
 
 .company-intro > .blq-emp {
