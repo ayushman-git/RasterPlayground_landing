@@ -312,18 +312,21 @@ button:hover {
     grid-template-rows: repeat(2, 1fr);
   }
   .about-wireframe {
-    margin-top: 10rem;
+    margin-top: 4rem;
     grid-column: 1/2;
     grid-row: 1/2;
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.15));
   }
   .features-wrap {
-    margin: 5rem 0;
+    margin: 2rem 0 5rem 0;
     grid-column: 1/2;
     grid-row: 2/3;
   }
   .hero-wrap > article {
     max-width: 90%;
     margin-bottom: 20rem;
+  }
+  .contribute-wrap {
+    margin-top: 4rem;
   }
 }
