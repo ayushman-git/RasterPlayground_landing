@@ -29,10 +29,6 @@ contributeBtn.addEventListener("click", () => {
   contribute.scrollIntoView(scrollOptions);
 });
 
-hamMenu.addEventListener("click", () => {
-  menu.style.visibility = "visible";
-});
-
 aboutBtnMenu.addEventListener("click", () => {
   about.scrollIntoView(scrollOptions);
 });
@@ -44,8 +40,12 @@ contributeBtnMenu.addEventListener("click", () => {
   contribute.scrollIntoView(scrollOptions);
 });
 
+hamMenu.addEventListener("click", () => {
+  menu.style.display = "flex";
+});
+
 document.addEventListener("scroll", () => {
-  if (menu.style.visibility === "visible") {
-    menu.style.visibility = "hidden";
+  if (menu.style.display === "flex") {
+    menu.style.display = "none";
   }
 });
