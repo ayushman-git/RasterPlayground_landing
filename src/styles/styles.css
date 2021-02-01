@@ -5,6 +5,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: white;
 }
 
 .wrapper {
@@ -14,9 +15,10 @@ body {
 
 #hero {
   color: white;
-  min-height: 120vh;
+  min-height: 110vh;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
   align-items: center;
   background-color: rgb(0, 0, 0);
   clip-path: ellipse(100% 55% at 48% 44%);
@@ -51,9 +53,14 @@ body {
 
 #nav-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 2rem 0;
+  background-color: rgba(0, 0, 0, 0.95);
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  backdrop-filter: blur(4px);
 }
 
 #nav-bar a {
@@ -97,6 +104,12 @@ body {
   cursor: pointer;
 }
 
+.nav-bar-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 button {
   background: #2d61ac;
   border: none;
@@ -131,8 +144,6 @@ button:hover {
   flex-flow: row wrap-reverse;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 50%;
 }
 
 .hero-wrap > article {
