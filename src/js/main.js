@@ -85,9 +85,9 @@ tl.from(
 
 tlImg.from(".hero-img", {
   duration: 3,
-  x: 80,
+  x: 140,
   opacity: 0,
-  scale: 1.1,
+  scale: 1.2,
 });
 
 tlImg.to(".hero-img", {
